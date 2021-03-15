@@ -1,0 +1,128 @@
+
+
+/* Effect 1: Brackets */
+
+.cc-rockmenu {
+	color:fff;
+	text-align:center;
+}
+
+.cc-rockmenu .rolling {
+  display: inline-block;
+  cursor:pointer;
+  width: 52px;
+  height: 52px;
+  text-align:left;
+  overflow: hidden;
+  border-radius: 26px;
+  background: #bbae79;
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+}
+.cc-rockmenu .rolling:hover {
+  width: 312px;
+}
+.cc-rockmenu .rolling .rolling_icon {
+  float:left;
+  z-index: 9;
+  display: inline-block;
+  width: 52px;
+      background: linear-gradient( 
+45deg
+ , #b6a14c, transparent);
+  height: 52px;
+  border-radius: 26px;
+  box-sizing: border-box;
+  margin: 0 10px 0 0;
+}
+.cc-rockmenu .rolling .rolling_icon:hover .rolling {
+  width: 312px;
+}
+
+
+
+.cc-rockmenu .rolling i.fa {
+    font-size: 24px;
+    padding: 15px;
+}
+.cc-rockmenu .rolling span {
+    display: block;
+    font-weight: bold;
+  
+}
+.cc-rockmenu .rolling li {
+    display: inline-block;
+    list-style: outside none none;
+}
+.cc-rockmenu .rolling li a {
+    color: #6a5502;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.cc-rockmenu .rolling li a:hover{
+	color:#fff;	
+}
+
+.cc-rockmenu .rolling li a:before{
+   content:"\00bb";
+}
+
+.cc-rockmenu .rolling p {
+	margin:0;
+}
+
+.cc-rockmenu .rolling input[type="text"] {
+	width: 175px;
+    background: #bbae79 none repeat scroll 0 0;
+    border: medium none;
+    height: 35px;
+    margin: 9px 0;
+    padding: 10px;
+	color:#fff;
+}
+.cc-rockmenu .rolling input[type="submit"] {
+    background: #6a5502 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    padding: 9px;
+}
+
+/* Rolling Animated Menu*/
+.rollingAnimated ul {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 44%;
+}
+.rollingAnimated ul li {
+    float:left;
+    list-style: outside none none;
+    margin: 0 25px 0 0;
+}
+
+.rollingAnimated a {
+    color: #fff;
+    display: inline-block;
+    font-family: "Lato",Arial,sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 65px;
+    margin-top: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.1, 0.1, 0.5, 1.4) 0s;
+}
+
+.rollingAnimated a:hover {
+  margin-top: -65px;
+}
+
+.rollingAnimated a:after {
+  content: attr(data-text);
+  display: block;
+  color: #11decd;
+}
